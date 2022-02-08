@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "github.com/fkorotkov/bazel-repros/proto/foo";
+
+package cache;
+
+import "google/protobuf/timestamp.proto";
+
+message Foo {
+  google.protobuf.Timestamp timestamp = 1;
+}
